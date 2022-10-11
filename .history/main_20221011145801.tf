@@ -75,7 +75,7 @@ resource "aws_instance" "nginx1" {
 sudo amazon-linux-extras install -y nginx1
 sudo service nginx start
 sudo rm /usr/share/nginx/html/index.html
-echo '<html><head><title>Cofomo Team Server</title></head><body style="background-color:green;"><h1>Welcome to Cofomo</h1><p>Have a Great day!!</p></body></html>' | sudo tee /usr/share/nginx/html/index.html
+echo '<html><head><title>Cofomo Team Server</title></head><body style=\"background-color:#008000\"><p style=\"text-align: center;\"><span style=\"color:#008000;\"><span style=\"font-size:56px;\">Welcome to cofomo. Have a great day!! ;</span></span></p></body></html>' | sudo tee /usr/share/nginx/html/index.html
 EOF
 
 }
